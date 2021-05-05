@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50ADD89321198A9620F3B842 /* Pods_TestFunCodeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FA25D0B20AA5DEE102385B /* Pods_TestFunCodeSDK.framework */; };
+		5A377D772641235F008FDE1F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A377D762641235F008FDE1F /* AppDelegate.m */; };
+		5A377D7D2641235F008FDE1F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A377D7C2641235F008FDE1F /* ViewController.m */; };
+		5A377D802641235F008FDE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A377D7E2641235F008FDE1F /* Main.storyboard */; };
+		5A377D8226412363008FDE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A377D8126412363008FDE1F /* Assets.xcassets */; };
+		5A377D8526412363008FDE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A377D8326412363008FDE1F /* LaunchScreen.storyboard */; };
+		5A377D8826412363008FDE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A377D8726412363008FDE1F /* main.m */; };
+		5A377DA6264124A4008FDE1F /* fig2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A377DA1264124A4008FDE1F /* fig2.png */; };
+		5A377DA7264124A4008FDE1F /* libLibBarcodeRadarUniversal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A377DA3264124A4008FDE1F /* libLibBarcodeRadarUniversal.a */; };
+		5A377DAD264124EA008FDE1F /* QRcodeDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A377DAC264124EA008FDE1F /* QRcodeDrawView.m */; };
+		5A377DB926413106008FDE1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A377DB826413106008FDE1F /* CoreGraphics.framework */; };
+		5A377DBB26413116008FDE1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A377DBA26413116008FDE1F /* Foundation.framework */; };
+		5A377DBD2641311D008FDE1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A377DBC2641311D008FDE1F /* UIKit.framework */; };
+		5A377DC02641318D008FDE1F /* detect.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5A377DBF2641318D008FDE1F /* detect.tflite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A377D722641235F008FDE1F /* TestFunCodeSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFunCodeSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A377D752641235F008FDE1F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A377D762641235F008FDE1F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A377D7B2641235F008FDE1F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A377D7C2641235F008FDE1F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A377D7F2641235F008FDE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A377D8126412363008FDE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A377D8426412363008FDE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A377D8626412363008FDE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A377D8726412363008FDE1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A377DA1264124A4008FDE1F /* fig2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fig2.png; sourceTree = "<group>"; };
+		5A377DA2264124A4008FDE1F /* ProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessViewController.h; sourceTree = "<group>"; };
+		5A377DA3264124A4008FDE1F /* libLibBarcodeRadarUniversal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLibBarcodeRadarUniversal.a; sourceTree = "<group>"; };
+		5A377DA4264124A4008FDE1F /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		5A377DA5264124A4008FDE1F /* PhotoDecoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDecoderViewController.h; sourceTree = "<group>"; };
+		5A377DAB264124DE008FDE1F /* QRcodeDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRcodeDrawView.h; sourceTree = "<group>"; };
+		5A377DAC264124EA008FDE1F /* QRcodeDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRcodeDrawView.m; sourceTree = "<group>"; };
+		5A377DB626412EC5008FDE1F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5A377DB826413106008FDE1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A377DBA26413116008FDE1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5A377DBC2641311D008FDE1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5A377DBF2641318D008FDE1F /* detect.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.tflite; sourceTree = "<group>"; };
+		96FA25D0B20AA5DEE102385B /* Pods_TestFunCodeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFunCodeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AEBE2CD3F755212FD5F7F1 /* Pods-TestFunCodeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFunCodeSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK.release.xcconfig"; sourceTree = "<group>"; };
+		EDA4E0A12A6776276F7893CA /* Pods-TestFunCodeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFunCodeSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A377D6F2641235F008FDE1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A377DB926413106008FDE1F /* CoreGraphics.framework in Frameworks */,
+				50ADD89321198A9620F3B842 /* Pods_TestFunCodeSDK.framework in Frameworks */,
+				5A377DA7264124A4008FDE1F /* libLibBarcodeRadarUniversal.a in Frameworks */,
+				5A377DBB26413116008FDE1F /* Foundation.framework in Frameworks */,
+				5A377DBD2641311D008FDE1F /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C531462F19DED2ED52BF08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDA4E0A12A6776276F7893CA /* Pods-TestFunCodeSDK.debug.xcconfig */,
+				E5AEBE2CD3F755212FD5F7F1 /* Pods-TestFunCodeSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A377D692641235F008FDE1F = {
+			isa = PBXGroup;
+			children = (
+				5A377D742641235F008FDE1F /* TestFunCodeSDK */,
+				5A377D732641235F008FDE1F /* Products */,
+				06C531462F19DED2ED52BF08 /* Pods */,
+				FE8486867B50FE5DFDA7C751 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A377D732641235F008FDE1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A377D722641235F008FDE1F /* TestFunCodeSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A377D742641235F008FDE1F /* TestFunCodeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5A377DA0264124A4008FDE1F /* SDK_Library_For_com.tw.FriendoLoyaltyCards */,
+				5A377D752641235F008FDE1F /* AppDelegate.h */,
+				5A377D762641235F008FDE1F /* AppDelegate.m */,
+				5A377D7B2641235F008FDE1F /* ViewController.h */,
+				5A377D7C2641235F008FDE1F /* ViewController.m */,
+				5A377DAB264124DE008FDE1F /* QRcodeDrawView.h */,
+				5A377DAC264124EA008FDE1F /* QRcodeDrawView.m */,
+				5A377D7E2641235F008FDE1F /* Main.storyboard */,
+				5A377D8126412363008FDE1F /* Assets.xcassets */,
+				5A377D8326412363008FDE1F /* LaunchScreen.storyboard */,
+				5A377D8626412363008FDE1F /* Info.plist */,
+				5A377D8726412363008FDE1F /* main.m */,
+			);
+			path = TestFunCodeSDK;
+			sourceTree = "<group>";
+		};
+		5A377DA0264124A4008FDE1F /* SDK_Library_For_com.tw.FriendoLoyaltyCards */ = {
+			isa = PBXGroup;
+			children = (
+				5A377DBF2641318D008FDE1F /* detect.tflite */,
+				5A377DA1264124A4008FDE1F /* fig2.png */,
+				5A377DA2264124A4008FDE1F /* ProcessViewController.h */,
+				5A377DA3264124A4008FDE1F /* libLibBarcodeRadarUniversal.a */,
+				5A377DA4264124A4008FDE1F /* CaptureSessionManager.h */,
+				5A377DA5264124A4008FDE1F /* PhotoDecoderViewController.h */,
+			);
+			path = SDK_Library_For_com.tw.FriendoLoyaltyCards;
+			sourceTree = "<group>";
+		};
+		FE8486867B50FE5DFDA7C751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A377DBC2641311D008FDE1F /* UIKit.framework */,
+				5A377DBA26413116008FDE1F /* Foundation.framework */,
+				5A377DB826413106008FDE1F /* CoreGraphics.framework */,
+				5A377DB626412EC5008FDE1F /* libc++.tbd */,
+				96FA25D0B20AA5DEE102385B /* Pods_TestFunCodeSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A377D712641235F008FDE1F /* TestFunCodeSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A377D8B26412363008FDE1F /* Build configuration list for PBXNativeTarget "TestFunCodeSDK" */;
+			buildPhases = (
+				7CE0B6CA957D000248069105 /* [CP] Check Pods Manifest.lock */,
+				5A377D6E2641235F008FDE1F /* Sources */,
+				5A377D6F2641235F008FDE1F /* Frameworks */,
+				5A377D702641235F008FDE1F /* Resources */,
+				1A80CEAC96EB425779F3B34A /* [CP] Embed Pods Frameworks */,
+				C44C24A500612F6EC7FDC51E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestFunCodeSDK;
+			productName = TestFunCodeSDK;
+			productReference = 5A377D722641235F008FDE1F /* TestFunCodeSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A377D6A2641235F008FDE1F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5A377D712641235F008FDE1F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5A377D6D2641235F008FDE1F /* Build configuration list for PBXProject "TestFunCodeSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A377D692641235F008FDE1F;
+			productRefGroup = 5A377D732641235F008FDE1F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A377D712641235F008FDE1F /* TestFunCodeSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A377D702641235F008FDE1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A377D8526412363008FDE1F /* LaunchScreen.storyboard in Resources */,
+				5A377D8226412363008FDE1F /* Assets.xcassets in Resources */,
+				5A377D802641235F008FDE1F /* Main.storyboard in Resources */,
+				5A377DA6264124A4008FDE1F /* fig2.png in Resources */,
+				5A377DC02641318D008FDE1F /* detect.tflite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A80CEAC96EB425779F3B34A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE0B6CA957D000248069105 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestFunCodeSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C44C24A500612F6EC7FDC51E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitTextRecognition/GoogleMVTextDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A377D6E2641235F008FDE1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A377DAD264124EA008FDE1F /* QRcodeDrawView.m in Sources */,
+				5A377D7D2641235F008FDE1F /* ViewController.m in Sources */,
+				5A377D772641235F008FDE1F /* AppDelegate.m in Sources */,
+				5A377D8826412363008FDE1F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A377D7E2641235F008FDE1F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A377D7F2641235F008FDE1F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A377D8326412363008FDE1F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A377D8426412363008FDE1F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A377D8926412363008FDE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A377D8A26412363008FDE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A377D8C26412363008FDE1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDA4E0A12A6776276F7893CA /* Pods-TestFunCodeSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LWLRJ9CAEQ;
+				INFOPLIST_FILE = TestFunCodeSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestFunCodeSDK/SDK_Library_For_com.tw.FriendoLoyaltyCards",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.FriendoLoyaltyCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_Wildcard_2021_0415;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A377D8D26412363008FDE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5AEBE2CD3F755212FD5F7F1 /* Pods-TestFunCodeSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = LWLRJ9CAEQ;
+				INFOPLIST_FILE = TestFunCodeSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestFunCodeSDK/SDK_Library_For_com.tw.FriendoLoyaltyCards",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tw.FriendoLoyaltyCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Dev_Wildcard_2021_0415;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A377D6D2641235F008FDE1F /* Build configuration list for PBXProject "TestFunCodeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A377D8926412363008FDE1F /* Debug */,
+				5A377D8A26412363008FDE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A377D8B26412363008FDE1F /* Build configuration list for PBXNativeTarget "TestFunCodeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A377D8C26412363008FDE1F /* Debug */,
+				5A377D8D26412363008FDE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A377D6A2641235F008FDE1F /* Project object */;
+}
