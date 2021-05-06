@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,13 +14,15 @@
 		5A377D8226412363008FDE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A377D8126412363008FDE1F /* Assets.xcassets */; };
 		5A377D8526412363008FDE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A377D8326412363008FDE1F /* LaunchScreen.storyboard */; };
 		5A377D8826412363008FDE1F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A377D8726412363008FDE1F /* main.m */; };
-		5A377DA6264124A4008FDE1F /* fig2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A377DA1264124A4008FDE1F /* fig2.png */; };
-		5A377DA7264124A4008FDE1F /* libLibBarcodeRadarUniversal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A377DA3264124A4008FDE1F /* libLibBarcodeRadarUniversal.a */; };
 		5A377DAD264124EA008FDE1F /* QRcodeDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A377DAC264124EA008FDE1F /* QRcodeDrawView.m */; };
 		5A377DB926413106008FDE1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A377DB826413106008FDE1F /* CoreGraphics.framework */; };
 		5A377DBB26413116008FDE1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A377DBA26413116008FDE1F /* Foundation.framework */; };
 		5A377DBD2641311D008FDE1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A377DBC2641311D008FDE1F /* UIKit.framework */; };
-		5A377DC02641318D008FDE1F /* detect.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 5A377DBF2641318D008FDE1F /* detect.tflite */; };
+		5ADBD3922643E869009D4E3F /* qdai_work03.json in Resources */ = {isa = PBXBuildFile; fileRef = 5ADBD3912643E869009D4E3F /* qdai_work03.json */; };
+		5ADBD39A2643EB02009D4E3F /* RegisterAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADBD3992643EB02009D4E3F /* RegisterAlertView.m */; };
+		5AFC7D012643E4CB00C4CFD3 /* TestSwiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC7D002643E4CB00C4CFD3 /* TestSwiftView.swift */; };
+		5AFC7D0C2643E79000C4CFD3 /* STBaseLoadingDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC7D0B2643E79000C4CFD3 /* STBaseLoadingDialogView.m */; };
+		5AFC7D0F2643E79700C4CFD3 /* STBaseLoadingViewDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFC7D0E2643E79700C4CFD3 /* STBaseLoadingViewDialogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,18 +36,22 @@
 		5A377D8426412363008FDE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A377D8626412363008FDE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A377D8726412363008FDE1F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5A377DA1264124A4008FDE1F /* fig2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fig2.png; sourceTree = "<group>"; };
-		5A377DA2264124A4008FDE1F /* ProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessViewController.h; sourceTree = "<group>"; };
-		5A377DA3264124A4008FDE1F /* libLibBarcodeRadarUniversal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLibBarcodeRadarUniversal.a; sourceTree = "<group>"; };
-		5A377DA4264124A4008FDE1F /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
-		5A377DA5264124A4008FDE1F /* PhotoDecoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDecoderViewController.h; sourceTree = "<group>"; };
 		5A377DAB264124DE008FDE1F /* QRcodeDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRcodeDrawView.h; sourceTree = "<group>"; };
 		5A377DAC264124EA008FDE1F /* QRcodeDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRcodeDrawView.m; sourceTree = "<group>"; };
 		5A377DB626412EC5008FDE1F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		5A377DB826413106008FDE1F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5A377DBA26413116008FDE1F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A377DBC2641311D008FDE1F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		5A377DBF2641318D008FDE1F /* detect.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = detect.tflite; sourceTree = "<group>"; };
+		5ADBD3912643E869009D4E3F /* qdai_work03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qdai_work03.json; sourceTree = "<group>"; };
+		5ADBD3942643E8AE009D4E3F /* DefConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefConstants.h; sourceTree = "<group>"; };
+		5ADBD3962643E8EF009D4E3F /* DefDeviveType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefDeviveType.h; sourceTree = "<group>"; };
+		5ADBD3982643EB02009D4E3F /* RegisterAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAlertView.h; sourceTree = "<group>"; };
+		5ADBD3992643EB02009D4E3F /* RegisterAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAlertView.m; sourceTree = "<group>"; };
+		5AFC7CFF2643E4CA00C4CFD3 /* TestFunCodeSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestFunCodeSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		5AFC7D002643E4CB00C4CFD3 /* TestSwiftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftView.swift; sourceTree = "<group>"; };
+		5AFC7D0A2643E78700C4CFD3 /* STBaseLoadingDialogView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STBaseLoadingDialogView.h; sourceTree = "<group>"; };
+		5AFC7D0B2643E79000C4CFD3 /* STBaseLoadingDialogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBaseLoadingDialogView.m; sourceTree = "<group>"; };
+		5AFC7D0E2643E79700C4CFD3 /* STBaseLoadingViewDialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STBaseLoadingViewDialogView.swift; sourceTree = "<group>"; };
 		96FA25D0B20AA5DEE102385B /* Pods_TestFunCodeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFunCodeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AEBE2CD3F755212FD5F7F1 /* Pods-TestFunCodeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFunCodeSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK.release.xcconfig"; sourceTree = "<group>"; };
 		EDA4E0A12A6776276F7893CA /* Pods-TestFunCodeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFunCodeSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,7 +64,6 @@
 			files = (
 				5A377DB926413106008FDE1F /* CoreGraphics.framework in Frameworks */,
 				50ADD89321198A9620F3B842 /* Pods_TestFunCodeSDK.framework in Frameworks */,
-				5A377DA7264124A4008FDE1F /* libLibBarcodeRadarUniversal.a in Frameworks */,
 				5A377DBB26413116008FDE1F /* Foundation.framework in Frameworks */,
 				5A377DBD2641311D008FDE1F /* UIKit.framework in Frameworks */,
 			);
@@ -97,33 +102,37 @@
 		5A377D742641235F008FDE1F /* TestFunCodeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5A377DA0264124A4008FDE1F /* SDK_Library_For_com.tw.FriendoLoyaltyCards */,
+				5ADBD3962643E8EF009D4E3F /* DefDeviveType.h */,
+				5ADBD3942643E8AE009D4E3F /* DefConstants.h */,
 				5A377D752641235F008FDE1F /* AppDelegate.h */,
 				5A377D762641235F008FDE1F /* AppDelegate.m */,
 				5A377D7B2641235F008FDE1F /* ViewController.h */,
 				5A377D7C2641235F008FDE1F /* ViewController.m */,
 				5A377DAB264124DE008FDE1F /* QRcodeDrawView.h */,
 				5A377DAC264124EA008FDE1F /* QRcodeDrawView.m */,
+				5AFC7D0E2643E79700C4CFD3 /* STBaseLoadingViewDialogView.swift */,
+				5AFC7D0A2643E78700C4CFD3 /* STBaseLoadingDialogView.h */,
+				5AFC7D0B2643E79000C4CFD3 /* STBaseLoadingDialogView.m */,
+				5ADBD3982643EB02009D4E3F /* RegisterAlertView.h */,
+				5ADBD3992643EB02009D4E3F /* RegisterAlertView.m */,
+				5AFC7D002643E4CB00C4CFD3 /* TestSwiftView.swift */,
 				5A377D7E2641235F008FDE1F /* Main.storyboard */,
 				5A377D8126412363008FDE1F /* Assets.xcassets */,
 				5A377D8326412363008FDE1F /* LaunchScreen.storyboard */,
 				5A377D8626412363008FDE1F /* Info.plist */,
 				5A377D8726412363008FDE1F /* main.m */,
+				5ADBD3902643E85E009D4E3F /* Lottie */,
+				5AFC7CFF2643E4CA00C4CFD3 /* TestFunCodeSDK-Bridging-Header.h */,
 			);
 			path = TestFunCodeSDK;
 			sourceTree = "<group>";
 		};
-		5A377DA0264124A4008FDE1F /* SDK_Library_For_com.tw.FriendoLoyaltyCards */ = {
+		5ADBD3902643E85E009D4E3F /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				5A377DBF2641318D008FDE1F /* detect.tflite */,
-				5A377DA1264124A4008FDE1F /* fig2.png */,
-				5A377DA2264124A4008FDE1F /* ProcessViewController.h */,
-				5A377DA3264124A4008FDE1F /* libLibBarcodeRadarUniversal.a */,
-				5A377DA4264124A4008FDE1F /* CaptureSessionManager.h */,
-				5A377DA5264124A4008FDE1F /* PhotoDecoderViewController.h */,
+				5ADBD3912643E869009D4E3F /* qdai_work03.json */,
 			);
-			path = SDK_Library_For_com.tw.FriendoLoyaltyCards;
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		FE8486867B50FE5DFDA7C751 /* Frameworks */ = {
@@ -150,7 +159,6 @@
 				5A377D6F2641235F008FDE1F /* Frameworks */,
 				5A377D702641235F008FDE1F /* Resources */,
 				1A80CEAC96EB425779F3B34A /* [CP] Embed Pods Frameworks */,
-				C44C24A500612F6EC7FDC51E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +179,7 @@
 				TargetAttributes = {
 					5A377D712641235F008FDE1F = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -197,11 +206,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ADBD3922643E869009D4E3F /* qdai_work03.json in Resources */,
 				5A377D8526412363008FDE1F /* LaunchScreen.storyboard in Resources */,
 				5A377D8226412363008FDE1F /* Assets.xcassets in Resources */,
 				5A377D802641235F008FDE1F /* Main.storyboard in Resources */,
-				5A377DA6264124A4008FDE1F /* fig2.png in Resources */,
-				5A377DC02641318D008FDE1F /* detect.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,31 +221,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/libextobjc/libextobjc.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libextobjc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7CE0B6CA957D000248069105 /* [CP] Check Pods Manifest.lock */ = {
@@ -258,24 +251,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C44C24A500612F6EC7FDC51E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MLKitTextRecognition/GoogleMVTextDetectorResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestFunCodeSDK/Pods-TestFunCodeSDK-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -284,9 +259,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A377DAD264124EA008FDE1F /* QRcodeDrawView.m in Sources */,
+				5AFC7D0C2643E79000C4CFD3 /* STBaseLoadingDialogView.m in Sources */,
 				5A377D7D2641235F008FDE1F /* ViewController.m in Sources */,
 				5A377D772641235F008FDE1F /* AppDelegate.m in Sources */,
+				5AFC7D0F2643E79700C4CFD3 /* STBaseLoadingViewDialogView.swift in Sources */,
 				5A377D8826412363008FDE1F /* main.m in Sources */,
+				5ADBD39A2643EB02009D4E3F /* RegisterAlertView.m in Sources */,
+				5AFC7D012643E4CB00C4CFD3 /* TestSwiftView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LWLRJ9CAEQ;
@@ -446,6 +426,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tw.FriendoLoyaltyCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Dev_Wildcard_2021_0415;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestFunCodeSDK/TestFunCodeSDK-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -456,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LWLRJ9CAEQ;
@@ -472,6 +456,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tw.FriendoLoyaltyCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Dev_Wildcard_2021_0415;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestFunCodeSDK/TestFunCodeSDK-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

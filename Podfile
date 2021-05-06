@@ -9,9 +9,12 @@ target 'TestFunCodeSDK' do
   use_frameworks!
 
   # Pods for ObjectDetection
-  pod 'TensorFlowLiteObjC'
-  pod 'libextobjc'
-  pod 'GoogleMLKit/TextRecognition'
-
+#   pod 'TensorFlowLiteObjC'
+#   pod 'libextobjc'
+#   pod 'GoogleMLKit/TextRecognition'
+  use_frameworks!
+  pod 'Masonry'
+  pod 'lottie-ios','~> 2.5.2'
+  pod 'SnapKit', '~> 5.0.0'
 
 end

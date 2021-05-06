@@ -37,7 +37,7 @@ int in_process=0;
     
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setTitle:@"start or stop" forState:UIControlStateNormal];
+    [btn setTitle:@"test" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(go_start_stop) forControlEvents:UIControlEventTouchUpInside];
     btn.backgroundColor = [UIColor redColor];
     btn.frame = CGRectMake(10, 60 + 120 + 20, 100, 44);
@@ -46,6 +46,7 @@ int in_process=0;
     videoon=0;
 }
 
+/*
 - (void)FunDecodeResultCallBack:(char[] )res withString:(NSString*)res_string andMeta:(NSInteger)res_len andMeta:(NSInteger)center_x andMeta:(NSInteger)center_y andMeta:(NSInteger)img_width andMeta:(NSInteger)img_height andMeta:(float)fun_angle andMeta:(int[])meta_data andMeta:(float[])vertices withType:(int)type
 {
     NSLog(@"type=%d", type);
@@ -164,106 +165,36 @@ int in_process=0;
         
     }//end of if (in_process==0)
 }
-
-
+*/
 
 
 -(void) go_start_stop
 {
-//    self.photoimageView.hidden=TRUE;
-//    self.imageView.hidden=FALSE;
+    BOOL isSwiftView = YES;
+    if (isSwiftView) {
+        [self showSTBaseLoadingViewDialogView];
+    }
+    else {
+        [self showSTBaseLoadingDialogView];
+    }
     
-    if (videoon==1)
-    {
-        //stop fundecode
-        [funcodeDecoder stopVideo];
-        videoon=0;
-        
-    }
-    else
-    {
-        //First time to start funcodedecoder
-        if (!funcodeDecoder)
-        {
-            funcodeDecoder = [[ProcessViewController alloc] init];
-            //set delegate
-            funcodeDecoder.fundelegate=self;
-            
-            //passin a view to funcodeDecoder for showing camera preview
-            [funcodeDecoder setBaseView:self.imageView];
-            //self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-            self.imageView.contentMode = UIViewContentModeScaleAspectFill;
-            
-            [funcodeDecoder viewDidLoad];
-            [funcodeDecoder startVideo];
-            [funcodeDecoder startDecode];
-            [funcodeDecoder setTurbo:1]; //set turbo flag
-            
-            
-        }
-        else //restart  funcodedecoder
-        {
-            [funcodeDecoder startVideo];
-            [funcodeDecoder startDecode];
-            //[funcodeDecoder viewDidLoad];
-            //                [funcodeDecoder setTurbo:1]; //set turbo flag
-            
-        }
-        
-        //code to set zoom
-        //float maxZoom = funcodeDecoder.getMaxZoom;
-        //if (maxZoom >= 1)
-        //    [funcodeDecoder setZoom:1];
-        
-        //How to set Range Scan
-        //CGSize img_size;
-        
-        //This is the sample to set range of top-left 1/4 corner
-        
-        //------ Please make sure the image width and height can be devided by 4 exactly.
-        //            int tw= (self.imageView.bounds.size.width/4);
-        //            int th=(self.imageView.bounds.size.height/4);
-        //            img_size.width = tw*4; //need to come out that width and height can be devide by 4 exactly.
-        //            img_size.height = th*4;
-        //-----
-        
-        //Set range for scan
-        //set x1,y1 , x2,y2 in the image view and the image size for rnage scan
-        //this example set the top-left 1/4 corner of the image as the scan range.
-        //[funcodeDecoder setScanRange:0 andMeta:0 andMeta:img_size.width/2 andMeta:img_size.height/2 andMeta:(CGSize)img_size];
-        
-        //Set full range scan
-        //if you need full range scan, just set it to x1,y1,x2,y2 to 0,0,0,0 as the following
-        //[funcodeDecoder setScanRange:0 andMeta:0 andMeta:0 andMeta:0 andMeta:(CGSize)img_size];
-        
-        //code to draw scan range
-        
-        //            //UIView *myBox  = [[UIView alloc] initWithFrame:CGRectMake(self.imageView.frame.origin.x , self.imageView.frame.origin.y, img_size.width/2, img_size.height/2)];
-        //            int t1=self.imageView.frame.origin.x ;
-        //            int t2=self.imageView.frame.origin.y;
-        //            UIView *myBox  = [[UIView alloc] initWithFrame:CGRectMake(0 , 0, img_size.width/2, img_size.height/2)];
-        //
-        //            myBox.backgroundColor = [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:0.3];
-        //            [self.view addSubview:myBox];
-        
-        
-        
-        /*
-         self.myBox  = [[UIView alloc] initWithFrame:CGRectMake(self.imageView.frame.origin.x , self.imageView.frame.origin.y, img_size.width/2, img_size.height/2)];
-         self.myBox.backgroundColor = [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:0.3];
-         [self.view addSubview:self.myBox];
-         */
-        
-        //            myBox1  = [[UIView alloc] initWithFrame:CGRectMake(self.imageView.frame.origin.x , self.imageView.frame.origin.y, 100, 100)];
-        //            //myBox1.backgroundColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.3];
-        //            [self.view addSubview:myBox1];
-        
-        videoon=1;
-        
-    }
     
 }
 
+- (void)showSTBaseLoadingViewDialogView{
+    STBaseLoadingViewDialogView *stBaseLoadingViewDialogView = [STBaseLoadingViewDialogView new];
+    [stBaseLoadingViewDialogView showDialogWithTitle:@"打卡驗證中..." lottieName:@"qdai_work03"];
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [window addSubview:stBaseLoadingViewDialogView];
+}
 
+- (void)showSTBaseLoadingDialogView{
+    STBaseLoadingDialogView *stBaseLoadingDialogView = [STBaseLoadingDialogView new];
+    [stBaseLoadingDialogView showDialogTitle:@"打卡驗證中..." lottieName:@"qdai_work03"];
+    
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    [window addSubview:stBaseLoadingDialogView];
+}
 
 @end

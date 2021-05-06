@@ -7,13 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ProcessViewController.h"
-#import "PhotoDecoderViewController.h"
-#import "QRcodeDrawView.h"
-
-@interface ViewController : UIViewController<FunDecodeDelegate>
+#import "STBaseLoadingDialogView.h"
+//抓所有專案的Swift file
+#import "TestFunCodeSDK-Swift.h"
+@interface ViewController : UIViewController
 {
-    ProcessViewController *funcodeDecoder;
+//    ProcessViewController *funcodeDecoder;
 }
 @property (nonatomic, strong) UILabel *messageLabel;
 @property (nonatomic, strong) UIImageView *imageView;
